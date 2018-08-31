@@ -10,6 +10,8 @@ html, body {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 24px;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .navbar-brand {
@@ -44,10 +46,91 @@ html, body {
 }
 
 #particles-js {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     z-index: -1;
-    overflow: hidden;s
+    overflow: hidden;
+}
+
+#about {
+    margin-top: 60%;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(100, 100, 100, 0.5);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#contact {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(100, 100, 100, 0.5);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#portfolio {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(100, 100, 100, 0.1);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    line-height: 100px;
+}
+
+.rb-section-title {
+    width: 100%;
+    line-height: 24px;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.rb-footer-text {
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    color: white;
+}
+
+.rb-footer-links {
+    width: 50%;
+    font-size: 28px;
+    text-align: center;
+    float: right;
+    overflow: hidden;
+    color: white;
+}
+
+.rb-footer-links a {
+    color: white;
+    padding: 10px;
+}
+
+.rb-footer-links a:hover {
+    color: grey;
 }
