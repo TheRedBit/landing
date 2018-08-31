@@ -13,7 +13,7 @@ var redbit_go = function() {
     for (var section in sections) {
         $("#" + section).click(function(event) {
             event.preventDefault();
-            var offset = 20; //Offset of 20px
+            var offset = 100; //Offset of 20px
 
             $('html, body').animate({
                 scrollTop: $("#" + section).offset().top + offset
